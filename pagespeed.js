@@ -11,7 +11,7 @@ if (!process.env.PS_API_KEY) {
 }
 
 if (process.env.OPENSHIFT_MONGODB_DB_URL) {
-    mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL + 'pagespeed';
+    mongoUrl = process.env.MONGODB_URI;
 } else {
     mongoUrl = 'mongodb://localhost:27017/pagespeed';
 }
