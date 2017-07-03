@@ -10,7 +10,7 @@ const ObjectId = require('mongodb').ObjectID;
 var mongoUrl;
 
 if (process.env.MONGODB_URI) {
-    mongoUrl = process.env.MONGODB_URI + 'pagespeed';
+    mongoUrl = process.env.MONGODB_URI + '/pagespeed';
 } else {
     mongoUrl = 'mongodb://localhost:27017/pagespeed';
 }
