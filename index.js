@@ -187,7 +187,7 @@ var getPageById = (id, db, callback) => {
 };
 
 server.connection({
-    host: 'localhost',
+    host: process.env.IP || 'localhost',
     port: process.env.PORT || 8000
 });
 
