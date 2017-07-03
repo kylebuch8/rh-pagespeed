@@ -10,7 +10,7 @@ if (!process.env.PS_API_KEY) {
     apiKeys = require('./keys');
 }
 
-if (process.env.OPENSHIFT_MONGODB_DB_URL) {
+if (process.env.MONGODB_URI) {
     mongoUrl = process.env.MONGODB_URI;
 } else {
     mongoUrl = 'mongodb://localhost:27017/pagespeed';
